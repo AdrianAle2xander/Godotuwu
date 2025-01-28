@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://cax4cq0gdbr8r"]
+
+[ext_resource type="AudioStream" uid="uid://ctu4e3uch6amh" path="res://Sonidos/youtube_ffldeFvGDcM_audio.mp3" id="1_fhbl4"]
+[ext_resource type="Script" path="res://Musica.gd" id="2_82skk"]
+[ext_resource type="AudioStream" uid="uid://ceuomiw0r5u6s" path="res://Sonidos/youtube_8WVBT7FrgJI_audio.mp3" id="3_bn2gt"]
+[ext_resource type="Script" path="res://Pop.gd" id="3_od787"]
+[ext_resource type="AudioStream" uid="uid://mh3t5re01ynj" path="res://Sonidos/youtube_QsgJNYzlA9U_audio.mp3" id="5_dktbu"]
+
+[node name="Global" type="Node"]
+
+[node name="Musica" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_fhbl4")
+volume_db = -14.054
+autoplay = true
+script = ExtResource("2_82skk")
+
+[node name="Pop" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_bn2gt")
+volume_db = -23.423
+script = ExtResource("3_od787")
+
+[node name="Juego" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_dktbu")
+volume_db = -25.752

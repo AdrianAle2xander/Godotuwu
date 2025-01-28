@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://ot2sos2wkf8p"]
+
+[ext_resource type="Script" path="res://creditos.gd" id="1_lc2m2"]
+[ext_resource type="Texture2D" uid="uid://b1c18sxmx5g7w" path="res://Imagenes/1366_2000.jpg" id="2_w0v7f"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lc2m2")
+
+[node name="13662000" type="Sprite2D" parent="."]
+position = Vector2(576, 332)
+texture = ExtResource("2_w0v7f")
+
+[node name="Button" type="Button" parent="13662000"]
+offset_left = -576.0
+offset_top = -332.0
+offset_right = -451.0
+offset_bottom = -301.0
+text = "Menu principal"
+
+[node name="TextEdit" type="TextEdit" parent="13662000"]
+offset_left = -212.0
+offset_top = -90.0
+offset_right = 222.0
+offset_bottom = -50.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Hecho por mi: Adrián Alexander Valencia Menacho 🤓"
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+middle_mouse_paste_enabled = false
+
+[connection signal="pressed" from="13662000/Button" to="." method="_on_button_pressed"]

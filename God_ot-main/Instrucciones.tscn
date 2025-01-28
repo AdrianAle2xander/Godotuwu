@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://chll01ndfncpo"]
+
+[ext_resource type="Script" path="res://Instrucciones.gd" id="1_34g7h"]
+[ext_resource type="Texture2D" uid="uid://3tj384feue4u" path="res://Imagenes/92599680-ilustración-de-trama-señal-de-seguridad-consulte-el-manual-de-instrucciones-y-el-folleto-consulte.jpg" id="2_gcysr"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_34g7h")
+
+[node name="92599680-ilustración-de-trama-señal-de-seguridad-consulte-el-manual-de-instrucciones-y-el-folleto-consulte" type="Sprite2D" parent="."]
+position = Vector2(579, 325.5)
+scale = Vector2(2.56889, 1.42444)
+texture = ExtResource("2_gcysr")
+
+[node name="Button" type="Button" parent="92599680-ilustración-de-trama-señal-de-seguridad-consulte-el-manual-de-instrucciones-y-el-folleto-consulte"]
+offset_left = 94.9827
+offset_top = -227.808
+offset_right = 223.983
+offset_bottom = -196.808
+text = "Menu principal "
+
+[node name="Button" type="Button" parent="."]
+offset_left = 558.0
+offset_top = 175.0
+offset_right = 913.0
+offset_bottom = 382.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+button_mask = 0
+text = "1. Te moves con ASWD 
+2. Nose
+3. Gana "
+flat = true
+
+[connection signal="pressed" from="92599680-ilustración-de-trama-señal-de-seguridad-consulte-el-manual-de-instrucciones-y-el-folleto-consulte/Button" to="." method="_on_button_pressed"]
