@@ -1,1 +1,1 @@
-Prohibidp criticar
+Prohibio criticar
