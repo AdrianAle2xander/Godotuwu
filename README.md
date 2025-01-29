@@ -1,0 +1,1 @@
+Prohibidp criticar
